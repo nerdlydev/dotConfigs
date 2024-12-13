@@ -1,0 +1,107 @@
+configuration {
+    modi: ["drun", "window"];    // Defines the modes Rofi will use: 'drun' for launching applications and 'window' for switching between open windows.
+    show-icons: true;            // Enables the display of icons in the menu.
+    display-drun: "👁️‍🗨️";           // Sets a custom icon (Unicode character) for the 'drun' mode.
+}
+
+* {
+    font: "Figtree 13";           // Sets the font and size to be used in the Rofi interface.
+    g-spacing: 10px;              // Global spacing between elements.
+    g-margin: 0;                  // Global margin for elements.
+    b-color: #000000FF;           // Background color for elements (fully opaque black).
+    fg-color: #FFFFFFFF;          // Foreground color (text color) for elements (fully opaque white).
+    fgp-color: #888888FF;         // Placeholder text color (semi-opaque gray).
+    b-radius: 20px;                // Border radius for rounded corners.
+    g-padding: 10px;               // Global padding inside elements.
+   // hl-color: #FFFFFFFF;          // Highlight color (fully opaque white).
+    hl-color: #AFEEEEFF; // Pale Turquoise
+
+
+
+
+    hlt-color: #000000FF;         // Highlight text color (fully opaque black).
+    alt-color: #111111FF;         // Alternate row background color (semi-opaque dark gray).
+    wbg-color: #000000CC;         // Window background color (semi-transparent black).
+    w-border: 2px solid;          // Window border size and style.
+    w-border-color: #AFEEEEFF; // Pale Turquoise  //#FFFFFFFF;    // Window border color (fully opaque white).
+    w-padding: 12px;              // Padding inside the window.
+}
+
+listview {
+    columns: 1;                   // Number of columns in the list view.
+    lines: 7;                     // Number of lines (entries) visible in the list view.
+    fixed-height: true;           // Ensures the list view height remains constant.
+    fixed-columns: true;          // Ensures the number of columns remains constant.
+    cycle: false;                 // Disables cycling through the list (scrolling wraps around).
+    scrollbar: false;             // Disables the scrollbar in the list view.
+    border: 0px solid;            // Border size and style for the list view (none).
+}
+
+window {
+    transparency: "real";         // Sets window transparency mode to real.
+    width: 450px;                 // Width of the Rofi window.
+    border-radius: @b-radius;     // Uses the global border radius value.
+    background-color: @wbg-color; // Uses the global window background color.
+    border: @w-border;            // Uses the global window border size and style.
+    border-color: @w-border-color;// Uses the global window border color.
+    padding: @w-padding;          // Uses the global window padding.
+}
+
+prompt {
+    text-color: @fg-color;        // Text color for the prompt, using the global foreground color.
+}
+
+inputbar {
+    children: ["prompt", "entry"]; // Defines child elements for the input bar.
+    spacing: @g-spacing;           // Spacing between child elements, using the global spacing value.
+}
+
+entry {
+    placeholder: "Search Apps";    // Placeholder text for the entry field.
+    text-color: @fg-color;         // Text color for the entry field, using the global foreground color.
+    placeholder-color: @fgp-color; // Placeholder text color, using the global placeholder color.
+}
+
+mainbox {
+    spacing: @g-spacing;          // Spacing between child elements, using the global spacing value.
+    margin: @g-margin;            // Margin around the mainbox, using the global margin value.
+    padding: @g-padding;          // Padding inside the mainbox, using the global padding value.
+    children: ["inputbar", "listview", "message"]; // Defines child elements for the mainbox.
+}
+
+element {
+    spacing: @g-spacing;          // Spacing between elements, using the global spacing value.
+    margin: @g-margin;            // Margin around elements, using the global margin value.
+    padding: @g-padding;          // Padding inside elements, using the global padding value.
+    border: 0px solid;            // Border size and style for elements (none).
+    border-radius: @b-radius;     // Border radius for rounded corners, using the global value.
+    border-color: @b-color;       // Border color for elements, using the global background color.
+    background-color: transparent;// Background color for elements (transparent).
+    text-color: @fg-color;        // Text color for elements, using the global foreground color.
+}
+
+element normal.normal {
+	background-color: transparent; // Normal state background color (transparent).
+	text-color: @fg-color;         // Normal state text color, using the global foreground color.
+}
+
+element alternate.normal {
+	background-color: @alt-color;  // Alternate row background color, using the global alternate color.
+	text-color: @fg-color;         // Alternate row text color, using the global foreground color.
+}
+
+element selected.active {
+	background-color: @hl-color;   // Selected active element background color, using the global highlight color.
+	text-color: @hlt-color;        // Selected active element text color, using the global highlight text color.
+}
+
+element selected.normal {
+	background-color: @hl-color;   // Selected normal element background color, using the global highlight color.
+	text-color: @hlt-color;        // Selected normal element text color, using the global highlight text color.
+}
+
+message {
+    background-color: red;        // Background color for the message element (red).
+    border: 0px solid;            // Border size and style for the message element (none).
+}
+

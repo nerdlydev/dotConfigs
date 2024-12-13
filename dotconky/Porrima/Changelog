@@ -1,0 +1,28 @@
+Changelog
+------------------------------
+Porrima - Conky Theme
+[ Draco Themes Pack ] 
+
+by Closebox73
+
+Social
+X			: https://twitter.com/closebox73
+Discord		: https://discord.com/users/1115644269802311750
+Github		: https://github.com/closebox73
+Pling		: https://pling.com/u/closebox73x
+Mastodon	: https://mastodon.social/@closebox73
+------------------------------
+
+v2.0
+date : 19 Apr 2024
+-	Add line draw_blended in conky config due transparent image issue in Gnome & KDE
+-	Add donation link
+-	New weather-icon-text.sh
+-	Some minor change
+
+
+v1.0
+date : 01 May 2023
+-	Initial release
+
+

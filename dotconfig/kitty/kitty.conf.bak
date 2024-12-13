@@ -1,0 +1,88 @@
+
+# Fonts
+font_family      FiraCode Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size        12.0
+disable_ligatures never
+
+# Colors (FrontEndDelight,Glacier,Dracula,Blazer,Brogrammer,ayu,Atom,Argonaut)
+include ~/.config/kitty/kitty-themes/themes/Atom.conf
+
+# Cursor
+# cursor #8fee96
+
+term xterm-256color
+
+background_opacity 0.50
+background_blur 60
+
+# color0  #000000
+# color8  #44475a
+# color1  #ff5555
+# color9  #ff5555
+# color2  #50fa7b
+# color10 #50fa7b
+# color3  #f1fa8c
+# color11 #f1fa8c
+# color4  #bd93f9
+# color12 #bd93f9
+# color5  #ff79c6
+# color13 #ff79c6
+# color6  #8be9fd
+# color14 #8be9fd
+# color7  #bbbbbb
+# color15 #ffffff
+
+# Mouse
+mouse_hide_wait 3.0
+# url_color #0087bd
+
+url_style curly
+
+open_url_with firefox
+
+detect_urls yes
+
+underline_hyperlinks hover
+
+copy_on_select yes
+
+# Cursor
+cursor_shape     block
+cursor_blink     on
+
+# Scrolling
+scrollback_lines 2000
+
+# Clipboard
+clipboard_control write-clipboard write-primary
+
+# Windows and Tabs
+tab_bar_edge     bottom
+tab_bar_style    powerline
+window_padding_width 0.0
+
+# Opacity & blur
+background_opacity 0.7
+background_blur 60
+
+# URL handling with Brave Browser
+open_url_with brave
+
+# shell integraation
+shell_integration zsh
+
+# Keybindings
+map ctrl+shift+t new_tab
+map ctrl+shift+w close_tab
+map ctrl+shift+left previous_tab
+map ctrl+shift+right next_tab
+
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Mocha
+include current-theme.conf
+# END_KITTY_THEME
