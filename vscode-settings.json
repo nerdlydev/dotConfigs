@@ -1,0 +1,164 @@
+{
+  "workbench.colorCustomizations": {},
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorSurroundingLinesStyle": "all",
+  "redhat.telemetry.enabled": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.views.remotes.branches.layout": "list",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.ignoreMissingGitWarning": true,
+  "lldb.suppressUpdateNotifications": true,
+  "editor.accessibilitySupport": "off",
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "window.titleBarStyle": "custom",
+  "window.confirmSaveUntitledWorkspace": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false,
+  "cSpell.userWords": [
+    "atleast",
+    "Bhai",
+    "calt",
+    "Catppuccin",
+    "codeium",
+    "granual",
+    "Inrst",
+    "Intrst",
+    "iodex",
+    "Kidenys",
+    "Monaspace",
+    "nextjs",
+    "tailwindcss",
+    "todos",
+    "topbar"
+  ],
+  "symbols.hidesExplorerArrows": false,
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "remote.autoForwardPortsSource": "hybrid",
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "codeium.enableCodeLens": false,
+  "continue.enableTabAutocomplete": true,
+  "files.autoSave": "onFocusChange",
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "conventionalCommits.showNewVersionNotes": false,
+  "window.customTitleBarVisibility": "auto",
+  "editor.linkedEditing": true,
+  "better-comments.highlightPlainText": true,
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "top",
+
+  // "editor.fontFamily": "'Monaspace Neon', monospace",
+
+  "editor.fontFamily": "'Cascadia Code', monospace",
+  //Cascadia Code,FiraCode Nerd Font, JetBrains Mono Nerd Font
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+  "terminal.integrated.fontSize": 15,
+  //"editor.fontLigatures":"'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+  "workbench.colorTheme": "Catppuccin Mocha",
+
+  //"telemetry.enableTelemetry": false,
+
+  //Add following lines of code to exclude the files & folders which aren't important for watchers to look for changes...
+
+  //exludes fies & folders in search indexing
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/env": true,
+    "**/venv": true
+  },
+  //exludes fies & folders for watcher service
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
+  },
+
+  "workbench.sideBar.location": "right",
+  "workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
+  "cSpell.ignoreWords": [
+    "Cascadia",
+    "Darkreader",
+    "Fira",
+    "Sysnative",
+    "autofetch",
+    "donot",
+    "dont",
+    "esbenp",
+    "liga",
+    "pycache",
+    "pytest",
+    "trakafine",
+    "venv",
+    "vsicons",
+    "windir"
+  ],
+  "editor.fontSize": 16,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "catppuccin-mocha"
+
+  // Ignoring the following folders from file watcher
+  //   "files.watcherExclude": {
+  //     "**/.git/objects/**": true,
+  //     "**/.git/subtree-cache/**": true,
+  //     "**/node_modules/**": true,
+  //     "**/env/**": true,
+  //     "**/venv/**": true,
+  //     "env-*": true
+  //   },
+
+  //   // Ignoring the following folders from file explorer to show
+  //   "files.exclude": {
+  //     "**/.git": true,
+  //     "**/.DS_Store": true,
+  //     "**/.vscode": true,
+  //     "**/__pycache__": true,
+  //     "**/.pytest_cache": true,
+  //     "**/node_modules": true,
+  //     "venv": true,
+  //     "*.sublime-*": true,
+  //     "env*": true
+  //   }
+}
+
