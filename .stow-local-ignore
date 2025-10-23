@@ -1,0 +1,35 @@
+# macOS system junk
+\.DS_Store
+\.AppleDouble
+\.LSOverride
+__MACOSX
+
+# Repo metadata
+^\.git$
+^\.gitignore$
+^\.gitattributes$
+^README\.md$
+^LICENSE$
+
+# Shell/setup scripts
+^install\.sh$
+^setup\.sh$
+^bootstrap\.sh$
+
+# Editor-specific
+^\.vscode$
+^\.idea$
+\.swp$
+\.swo$
+\.bak$
+
+# macOS Finder/system files
+^\.Trashes$
+^\.Spotlight-V100$
+^\.fseventsd$
+
+# Temporary files
+~$
+\.tmp$
+\.log$
+
